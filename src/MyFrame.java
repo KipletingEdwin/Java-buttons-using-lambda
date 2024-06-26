@@ -10,8 +10,12 @@ public class MyFrame extends JFrame {
     MyFrame(){
 
         ImageIcon icon = new ImageIcon("finger.png");
+        ImageIcon icon2 = new ImageIcon("wondering.jpg");
 
         label = new JLabel();
+        label.setIcon(icon2);
+        label.setBounds(150, 250, 150, 150);
+
 
         button = new  JButton();
         button.setBounds(100, 100, 350, 200);
@@ -33,9 +37,7 @@ public class MyFrame extends JFrame {
         this.setSize(700, 700);
         this.setVisible(true);
         this.add(button);
-
-
-
+        this.add(label);
 
     }
 }
