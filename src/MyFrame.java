@@ -5,10 +5,13 @@ import java.awt.event.ActionListener;
 public class MyFrame extends JFrame {
 
     JButton button;
+    JLabel label;
 
     MyFrame(){
 
         ImageIcon icon = new ImageIcon("finger.png");
+
+        label = new JLabel();
 
         button = new  JButton();
         button.setBounds(100, 100, 350, 200);
@@ -21,6 +24,9 @@ public class MyFrame extends JFrame {
         button.setFont(new Font("Comic Sans",Font.BOLD,25));
         button.setIconTextGap(-5);
         button.setForeground(Color.cyan);
+        button.setBackground(Color.lightGray);
+        button.setBorder(BorderFactory.createEtchedBorder());
+//        button.setEnabled(false);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
